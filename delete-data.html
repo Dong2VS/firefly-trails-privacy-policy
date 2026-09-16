@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firefly Trails — Data Deletion</title>
+<style>
+  :root {
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --border: #e0ecdf;
+    --text: #1c2620;
+    --text-muted: #5a6b5c;
+    --accent: #4f9d6c;
+    --accent-soft: #e9f5ec;
+    --link: #2f7a4c;
+    --code-bg: #eef6ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10160f;
+      --surface: #182018;
+      --border: #2b352b;
+      --text: #eaf3df;
+      --text-muted: #9db09b;
+      --accent: #8cd4b5;
+      --accent-soft: #1e2a20;
+      --link: #a4e0bf;
+      --code-bg: #1c261d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10160f;
+    --surface: #182018;
+    --border: #2b352b;
+    --text: #eaf3df;
+    --text-muted: #9db09b;
+    --accent: #8cd4b5;
+    --accent-soft: #1e2a20;
+    --link: #a4e0bf;
+    --code-bg: #1c261d;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 20px 80px;
+  }
+  .wrap { max-width: 700px; margin: 0 auto; }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 40px 0 28px;
+  }
+  .mark {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #edcf85, #8cd4b5 55%, #4f9d6c);
+    flex: none;
+  }
+  header h1 { font-size: 1.15rem; margin: 0; letter-spacing: -0.01em; }
+  header p { margin: 2px 0 0; color: var(--text-muted); font-size: 0.85rem; }
+
+  .lang-switch {
+    display: flex; gap: 8px; margin-bottom: 32px;
+  }
+  .lang-switch a {
+    font-size: 0.82rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    text-decoration: none;
+    background: var(--surface);
+  }
+  .lang-switch a:hover { color: var(--accent); border-color: var(--accent); }
+
+  h2 {
+    font-size: 1.05rem;
+    margin: 2.4em 0 0.7em;
+    padding-top: 0.2em;
+    letter-spacing: -0.01em;
+  }
+  h2 .num { color: var(--accent); font-variant-numeric: tabular-nums; margin-right: 0.5em; }
+
+  p, li { color: var(--text); font-size: 0.98rem; }
+  p { margin: 0.9em 0; }
+  ul, ol { margin: 0.9em 0; padding-left: 1.3em; }
+  li { margin: 0.4em 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 1.2em 0;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+  .card.steps { border-color: var(--accent); background: var(--accent-soft); }
+
+  a { color: var(--link); }
+
+  .meta {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    border-top: 1px solid var(--border);
+    margin-top: 3em;
+    padding-top: 1.2em;
+  }
+
+  .lang-section { display: none; }
+  .lang-section.active { display: block; }
+  code { background: var(--code-bg); padding: 0.15em 0.4em; border-radius: 5px; font-size: 0.88em; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="mark"></div>
+    <div>
+      <h1>Firefly Trails: Forest Puzzle</h1>
+      <p>Data Deletion — by Dong2VS</p>
+    </div>
+  </header>
+
+  <div class="lang-switch">
+    <a href="#" onclick="showLang('en');return false;" id="btn-en">English</a>
+    <a href="#" onclick="showLang('vi');return false;" id="btn-vi">Tiếng Việt</a>
+  </div>
+
+  <div class="lang-section" id="lang-en">
+    <p>This page explains how to request deletion of data associated with you from <strong>Firefly Trails: Forest Puzzle</strong>, developed by <strong>Dong2VS</strong>. See also our <a href="./">Privacy Policy</a>.</p>
+
+    <h2><span class="num">1.</span>How to request deletion</h2>
+    <div class="card steps">
+      <ol>
+        <li>Email <a href="mailto:dragonsfunny85@gmail.com?subject=Firefly%20Trails%20-%20Data%20Deletion%20Request">dragonsfunny85@gmail.com</a> with the subject line <code>Data Deletion Request</code>.</li>
+        <li>Tell us the device and approximate date you played, so we can identify any related support records.</li>
+        <li>We will confirm by email within <strong>30 days</strong> once your request has been processed.</li>
+      </ol>
+    </div>
+
+    <h2><span class="num">2.</span>What gets deleted</h2>
+    <p>Firefly Trails does not require an account and does not operate a server that stores your gameplay data. Your unlocked levels, completed gardens, and sound setting live <strong>only on your device</strong>.</p>
+    <div class="card">
+      <ul>
+        <li><strong>On-device progress</strong> — deleted immediately when you uninstall the app. No request to us is needed for this.</li>
+        <li><strong>Support emails you send us</strong> (e.g. bug reports) — deleted from our inbox once your deletion request is processed, unless we are legally required to keep them longer.</li>
+      </ul>
+    </div>
+
+    <h2><span class="num">3.</span>What we don't control</h2>
+    <p>The app shows ads through <strong>Google AdMob</strong>, which independently collects an Advertising ID (AAID) and related data as described in our <a href="./">Privacy Policy</a>. We do not have access to or store this data ourselves, so we cannot delete it on Google's behalf.</p>
+    <div class="card">
+      <ul>
+        <li>To reset or limit your Advertising ID, use your device's own settings (Android: Settings → Google → Ads → Delete advertising ID / opt out of ads personalization; iOS: Settings → Privacy & Security → Tracking).</li>
+        <li>To manage what Google itself retains, see <a href="https://myaccount.google.com/data-and-privacy">Google's Data & Privacy controls</a>.</li>
+      </ul>
+    </div>
+
+    <h2><span class="num">4.</span>Contact</h2>
+    <p>Questions about this page or the app's data practices? Email <a href="mailto:dragonsfunny85@gmail.com">dragonsfunny85@gmail.com</a>.</p>
+  </div>
+
+  <div class="lang-section" id="lang-vi">
+    <p>Trang này hướng dẫn cách yêu cầu xoá dữ liệu liên quan đến bạn khỏi <strong>Firefly Trails: Forest Puzzle</strong>, do <strong>Dong2VS</strong> phát triển. Xem thêm <a href="./">Chính sách quyền riêng tư</a>.</p>
+
+    <h2><span class="num">1.</span>Cách yêu cầu xoá dữ liệu</h2>
+    <div class="card steps">
+      <ol>
+        <li>Gửi email tới <a href="mailto:dragonsfunny85@gmail.com?subject=Firefly%20Trails%20-%20Data%20Deletion%20Request">dragonsfunny85@gmail.com</a> với tiêu đề <code>Data Deletion Request</code>.</li>
+        <li>Cho chúng tôi biết thiết bị và thời gian bạn chơi (ước lượng) để xác định các bản ghi hỗ trợ liên quan (nếu có).</li>
+        <li>Chúng tôi sẽ xác nhận qua email trong vòng <strong>30 ngày</strong> sau khi xử lý xong yêu cầu.</li>
+      </ol>
+    </div>
+
+    <h2><span class="num">2.</span>Dữ liệu nào sẽ được xoá</h2>
+    <p>Firefly Trails không yêu cầu tài khoản và không vận hành máy chủ lưu trữ dữ liệu chơi game của bạn. Các màn đã mở khoá, khu vườn đã hoàn thành và cài đặt âm thanh chỉ được lưu <strong>trên thiết bị của bạn</strong>.</p>
+    <div class="card">
+      <ul>
+        <li><strong>Tiến trình trên thiết bị</strong> — bị xoá ngay khi bạn gỡ cài đặt ứng dụng. Không cần gửi yêu cầu cho phần này.</li>
+        <li><strong>Email hỗ trợ bạn gửi cho chúng tôi</strong> (ví dụ báo lỗi) — sẽ bị xoá khỏi hộp thư sau khi yêu cầu xoá được xử lý, trừ khi pháp luật yêu cầu lưu giữ lâu hơn.</li>
+      </ul>
+    </div>
+
+    <h2><span class="num">3.</span>Những gì chúng tôi không kiểm soát</h2>
+    <p>Ứng dụng hiển thị quảng cáo qua <strong>Google AdMob</strong>, đơn vị này tự thu thập độc lập Advertising ID (AAID) và dữ liệu liên quan như mô tả trong <a href="./">Chính sách quyền riêng tư</a>. Chúng tôi không truy cập hay lưu trữ dữ liệu này nên không thể thay Google xoá nó.</p>
+    <div class="card">
+      <ul>
+        <li>Để đặt lại/giới hạn Advertising ID, dùng cài đặt trên thiết bị (Android: Settings → Google → Ads → Xoá mã quảng cáo / tắt cá nhân hoá quảng cáo; iOS: Settings → Privacy & Security → Tracking).</li>
+        <li>Để quản lý dữ liệu Google lưu giữ, xem <a href="https://myaccount.google.com/data-and-privacy">Trang quản lý Dữ liệu & Quyền riêng tư của Google</a>.</li>
+      </ul>
+    </div>
+
+    <h2><span class="num">4.</span>Liên hệ</h2>
+    <p>Có câu hỏi về trang này hoặc cách ứng dụng xử lý dữ liệu? Gửi email tới <a href="mailto:dragonsfunny85@gmail.com">dragonsfunny85@gmail.com</a>.</p>
+  </div>
+
+  <div class="meta">Last updated / Cập nhật lần cuối: September 16, 2026 · Firefly Trails: Forest Puzzle</div>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('lang-vi').classList.toggle('active', lang === 'vi');
+    document.getElementById('btn-en').style.borderColor = lang === 'en' ? 'var(--accent)' : 'var(--border)';
+    document.getElementById('btn-en').style.color = lang === 'en' ? 'var(--accent)' : 'var(--text-muted)';
+    document.getElementById('btn-vi').style.borderColor = lang === 'vi' ? 'var(--accent)' : 'var(--border)';
+    document.getElementById('btn-vi').style.color = lang === 'vi' ? 'var(--accent)' : 'var(--text-muted)';
+    try { localStorage.setItem('ft-privacy-lang', lang); } catch (e) {}
+  }
+  showLang(localStorage.getItem('ft-privacy-lang') || 'en');
+</script>
+
+</body>
+</html>
