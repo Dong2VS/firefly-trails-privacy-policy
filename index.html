@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firefly Trails — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #faf9fc;
+    --surface: #ffffff;
+    --border: #e0ecdf;
+    --text: #1c2620;
+    --text-muted: #5a6b5c;
+    --accent: #4f9d6c;
+    --accent-soft: #e9f5ec;
+    --link: #2f7a4c;
+    --code-bg: #eef6ef;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10160f;
+      --surface: #182018;
+      --border: #2b352b;
+      --text: #eaf3df;
+      --text-muted: #9db09b;
+      --accent: #8cd4b5;
+      --accent-soft: #1e2a20;
+      --link: #a4e0bf;
+      --code-bg: #1c261d;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #10160f;
+    --surface: #182018;
+    --border: #2b352b;
+    --text: #eaf3df;
+    --text-muted: #9db09b;
+    --accent: #8cd4b5;
+    --accent-soft: #1e2a20;
+    --link: #a4e0bf;
+    --code-bg: #1c261d;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 20px 80px;
+  }
+  .wrap { max-width: 700px; margin: 0 auto; }
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 40px 0 28px;
+  }
+  .mark {
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #edcf85, #8cd4b5 55%, #4f9d6c);
+    flex: none;
+  }
+  header h1 { font-size: 1.15rem; margin: 0; letter-spacing: -0.01em; }
+  header p { margin: 2px 0 0; color: var(--text-muted); font-size: 0.85rem; }
+
+  .lang-switch {
+    display: flex; gap: 8px; margin-bottom: 32px;
+  }
+  .lang-switch a {
+    font-size: 0.82rem;
+    padding: 6px 14px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    text-decoration: none;
+    background: var(--surface);
+  }
+  .lang-switch a:hover { color: var(--accent); border-color: var(--accent); }
+
+  h2 {
+    font-size: 1.05rem;
+    margin: 2.4em 0 0.7em;
+    padding-top: 0.2em;
+    letter-spacing: -0.01em;
+  }
+  h2 .num { color: var(--accent); font-variant-numeric: tabular-nums; margin-right: 0.5em; }
+
+  p, li { color: var(--text); font-size: 0.98rem; }
+  p { margin: 0.9em 0; }
+  ul { margin: 0.9em 0; padding-left: 1.3em; }
+  li { margin: 0.4em 0; }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin: 1.2em 0;
+  }
+  .card p:first-child { margin-top: 0; }
+  .card p:last-child { margin-bottom: 0; }
+
+  a { color: var(--link); }
+
+  .meta {
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    border-top: 1px solid var(--border);
+    margin-top: 3em;
+    padding-top: 1.2em;
+  }
+
+  .lang-section { display: none; }
+  .lang-section.active { display: block; }
+  code { background: var(--code-bg); padding: 0.15em 0.4em; border-radius: 5px; font-size: 0.88em; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="mark"></div>
+    <div>
+      <h1>Firefly Trails: Forest Puzzle</h1>
+      <p>Privacy Policy</p>
+    </div>
+  </header>
+
+  <div class="lang-switch">
+    <a href="#" onclick="showLang('en');return false;" id="btn-en">English</a>
+    <a href="#" onclick="showLang('vi');return false;" id="btn-vi">Tiếng Việt</a>
+  </div>
+
+  <div class="lang-section" id="lang-en">
+    <p>Firefly Trails: Forest Puzzle ("the app", "we") respects your privacy. This policy explains what data is collected when you use the app.</p>
+
+    <h2><span class="num">1.</span>Data we collect directly</h2>
+    <p>Firefly Trails does <strong>not</strong> require an account and does not collect your name, email address, phone number, or any other personal information. Your unlocked levels, completed gardens, and sound setting are stored <strong>only on your device</strong> and are never transmitted to us.</p>
+
+    <h2><span class="num">2.</span>Data collected by third parties (Google AdMob)</h2>
+    <p>The app shows banner, interstitial, and rewarded ads through <strong>Google AdMob</strong>. To serve ads (including non-personalized ads), AdMob may collect:</p>
+    <div class="card">
+      <ul>
+        <li>Advertising ID (AAID)</li>
+        <li>Device information, OS version, and IP address (used to determine your region for legal compliance such as GDPR/UK rules)</li>
+        <li>Ad interaction data (impressions, clicks)</li>
+      </ul>
+    </div>
+    <p>This is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from sites/apps that use Google services</a>.</p>
+    <p>For users in the EEA/UK, the app shows a <strong>consent form (UMP — User Messaging Platform)</strong> before loading ads, letting you accept or decline personalized advertising. You can change this choice anytime via <strong>Settings → Manage Ad Consent</strong> in the app.</p>
+
+    <h2><span class="num">3.</span>Children</h2>
+    <p>Firefly Trails is not directed at children under 13 and we do not knowingly collect data from children.</p>
+
+    <h2><span class="num">4.</span>Your rights</h2>
+    <div class="card">
+      <ul>
+        <li>Decline or withdraw consent to personalized ads at any time (in-app Settings)</li>
+        <li>Uninstall the app to remove all local data (progress, settings)</li>
+        <li>Contact us below to request deletion of any data associated with you</li>
+      </ul>
+    </div>
+
+    <h2><span class="num">5.</span>Contact</h2>
+    <p>Questions about this policy? Email <a href="mailto:dragonsfunny85@gmail.com">dragonsfunny85@gmail.com</a>.</p>
+  </div>
+
+  <div class="lang-section" id="lang-vi">
+    <p>Firefly Trails: Forest Puzzle ("ứng dụng", "chúng tôi") tôn trọng quyền riêng tư của người dùng. Chính sách này giải thích dữ liệu nào được thu thập khi bạn sử dụng ứng dụng.</p>
+
+    <h2><span class="num">1.</span>Dữ liệu do ứng dụng trực tiếp thu thập</h2>
+    <p>Firefly Trails <strong>không</strong> yêu cầu đăng ký tài khoản, không thu thập tên, email, số điện thoại hay bất kỳ thông tin cá nhân nào. Các màn đã mở khoá, khu vườn đã hoàn thành và cài đặt âm thanh được lưu <strong>chỉ trên thiết bị của bạn</strong>, không gửi lên máy chủ nào của chúng tôi.</p>
+
+    <h2><span class="num">2.</span>Dữ liệu do bên thứ ba thu thập (Google AdMob)</h2>
+    <p>Ứng dụng hiển thị quảng cáo banner, toàn màn hình (interstitial) và quảng cáo có thưởng (rewarded) qua <strong>Google AdMob</strong>. Để hiển thị quảng cáo (kể cả quảng cáo không cá nhân hoá), AdMob có thể thu thập:</p>
+    <div class="card">
+      <ul>
+        <li>Mã định danh quảng cáo (Advertising ID / AAID)</li>
+        <li>Thông tin thiết bị, phiên bản hệ điều hành, địa chỉ IP (để xác định khu vực nhằm tuân thủ pháp lý như GDPR/UK)</li>
+        <li>Dữ liệu tương tác quảng cáo (lượt xem, lượt nhấp)</li>
+      </ul>
+    </div>
+    <p>Việc này tuân theo <a href="https://policies.google.com/privacy">Chính sách quyền riêng tư của Google</a> và <a href="https://policies.google.com/technologies/partner-sites">cách Google sử dụng dữ liệu từ các trang/ứng dụng dùng dịch vụ của Google</a>.</p>
+    <p>Với người dùng ở khu vực EEA/Anh, ứng dụng hiển thị <strong>biểu mẫu xin đồng ý (UMP)</strong> trước khi tải quảng cáo, cho phép bạn chọn đồng ý/từ chối quảng cáo cá nhân hoá. Bạn có thể đổi lựa chọn này bất cứ lúc nào qua <strong>Cài đặt → Quản lý đồng ý quảng cáo</strong> trong ứng dụng.</p>
+
+    <h2><span class="num">3.</span>Trẻ em</h2>
+    <p>Firefly Trails không hướng đến trẻ em dưới 13 tuổi và không cố ý thu thập dữ liệu từ trẻ em.</p>
+
+    <h2><span class="num">4.</span>Quyền của bạn</h2>
+    <div class="card">
+      <ul>
+        <li>Từ chối/thu hồi đồng ý quảng cáo cá nhân hoá bất cứ lúc nào (Cài đặt trong ứng dụng)</li>
+        <li>Gỡ cài đặt ứng dụng để xoá toàn bộ dữ liệu cục bộ (tiến trình chơi, cài đặt)</li>
+        <li>Liên hệ chúng tôi bên dưới để yêu cầu xoá dữ liệu liên quan tới bạn</li>
+      </ul>
+    </div>
+
+    <h2><span class="num">5.</span>Liên hệ</h2>
+    <p>Có câu hỏi về chính sách này? Gửi email tới <a href="mailto:dragonsfunny85@gmail.com">dragonsfunny85@gmail.com</a>.</p>
+  </div>
+
+  <div class="meta">Last updated / Cập nhật lần cuối: September 16, 2026 · Firefly Trails: Forest Puzzle</div>
+</div>
+
+<script>
+  function showLang(lang) {
+    document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+    document.getElementById('lang-vi').classList.toggle('active', lang === 'vi');
+    document.getElementById('btn-en').style.borderColor = lang === 'en' ? 'var(--accent)' : 'var(--border)';
+    document.getElementById('btn-en').style.color = lang === 'en' ? 'var(--accent)' : 'var(--text-muted)';
+    document.getElementById('btn-vi').style.borderColor = lang === 'vi' ? 'var(--accent)' : 'var(--border)';
+    document.getElementById('btn-vi').style.color = lang === 'vi' ? 'var(--accent)' : 'var(--text-muted)';
+    try { localStorage.setItem('ft-privacy-lang', lang); } catch (e) {}
+  }
+  showLang(localStorage.getItem('ft-privacy-lang') || 'en');
+</script>
+
+</body>
+</html>
